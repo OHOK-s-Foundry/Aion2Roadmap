@@ -340,13 +340,13 @@ export const sections: Section[] = [
             },
             {
                 id: 'e-conquest2',
-                title: 'Reach the Second Stage of Conquest',
+                title: 'Reach the Second Stage of Transcendence - Deus Research Base/Shattered Arkanis',
                 summary: 'First major farming goal — chance at Blue Arcanas.',
                 milestone: true,
                 blocks: [
                     {
                         t: 'p',
-                        text: 'Your first major farming goal is to obtain enough item level to enter the second stage of Conquest.',
+                        text: 'Your first major farming goal is to obtain enough item level to enter the second stage of Transcendence - Deus Research Base/Shattered Arkanis.',
                     },
                     { t: 'p', text: 'This stage gives you a chance to obtain:' },
                     { t: 'ul', items: ['Blue Arcanas', 'Other useful materials'] },
