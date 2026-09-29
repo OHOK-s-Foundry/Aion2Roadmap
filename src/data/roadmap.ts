@@ -29,10 +29,15 @@ export type Section = {
 
 export const roadmapMeta = {
     title: 'AION2',
-    subtitle: 'Launch to Endgame Progression Roadmap',
+    subtitle: 'Launch to Endgame Vague Progression Roadmap',
     goal: 'Reach Sanctuary / the later endgame progression as quickly and efficiently as possible while avoiding unnecessary Odyle Energy spending, resource waste, and premature gear optimization.',
     source: 'https://www.youtube.com/watch?v=9r4nDbBxRxk',
     discord: 'validss',
+    sidenote1:
+        'Please read all instructions carefully before proceeding. Depending on the pace of your progression, you may need to adjust the recommended order or timing of certain steps.',
+    sidenote2:
+        'If you encounter any incorrect, outdated, or missing information, please report it to me via Discord so I can review and update the guide accordingly.',
+    sidenote3: 'The source video and my Discord tag can be found in the footer of this page.',
 };
 
 export const sections: Section[] = [
@@ -93,6 +98,7 @@ export const sections: Section[] = [
                 tag: 'Daily',
                 blocks: [
                     { t: 'p', text: 'You can complete 5 Duty Quests per day.' },
+                    { t: 'p', text: 'Make sure to complete these quests daily on each of your characters as they provide valuable rewards.' },
                     { t: 'p', text: 'Prioritize useful rewards such as:' },
                     { t: 'ul', items: ['Keys', 'Pet shards', 'Enhancement stones', 'Other progression materials'] },
                     { t: 'p', text: 'See the Side Content section for more information.' },
@@ -102,9 +108,10 @@ export const sections: Section[] = [
                 id: 's5',
                 step: 5,
                 title: 'Collect Abyss Feathers',
-                summary: 'Collect feathers in the Abyss whenever possible.',
+                summary: 'Collect feathers in the Abyss as early as possible.',
                 blocks: [
-                    { t: 'p', text: 'Collect the feathers in the Abyss whenever possible.' },
+                    { t: 'p', text: 'Collect the feathers in the Abyss as soon as possible.' },
+                    { t: 'p', text: 'The Monolith provides PvP Board Daevanion points which increases your overall item-level.' },
                     { t: 'note', text: 'Try to do this early, before the areas become heavily populated.' },
                 ],
             },
@@ -154,7 +161,6 @@ export const sections: Section[] = [
                         t: 'p',
                         text: 'However, these can potentially be ignored temporarily on the enemy map if they only provide Abyss Points (AP).',
                     },
-                    { t: 'note', text: 'Priority: Focus on activities that directly contribute to item-level progression first.' },
                 ],
             },
         ],
@@ -171,28 +177,32 @@ export const sections: Section[] = [
                 id: 's8',
                 step: 8,
                 title: 'Spam the Cheapest Lv. 1 Craft While AFK',
-                summary: 'Level Handicrafting passively whenever you are AFK.',
+                summary: 'Level Handicrafting and other crafting professions passively whenever you are AFK.',
                 blocks: [
-                    { t: 'p', text: 'Whenever you are AFK, continuously craft the cheapest Lv. 1 Handicrafting recipe.' },
+                    { t: 'p', text: 'Whenever you are AFK, continuously craft the cheapest Lv. 1 recipe for your profession.' },
                     { t: 'p', text: 'The goal is to quickly level your crafting profession.' },
                     { t: 'p', text: 'Eventually, you want to reach: Professional Crafting.' },
                     { t: 'p', text: 'This will allow you to craft important materials and eventually your gear.' },
+                    {
+                        t: 'note',
+                        text: 'Our first goal is to craft the accessories so start with the Handicraft profession then switch to other crafting professions as needed.',
+                    },
                 ],
             },
             {
                 id: 's9',
                 step: 9,
                 title: 'Reach at Least Professional Lv. 20',
-                summary: 'Unlocks Enhanced Thick Balaur Scale — you will need a lot of these.',
+                summary: 'Start crafting Enhanced Thick Balaur Scale — you will need a lot of these.',
                 tag: 'Prof. Lv. 20',
                 milestone: true,
                 blocks: [
-                    { t: 'p', text: 'Once you reach Professional crafting, you can start crafting: Enhanced Thick Balaur Scale.' },
-                    { t: 'p', text: 'You will need a large quantity of these later for crafting gear.' },
+                    { t: 'p', text: 'Once you reach Professional crafting Lv. 20, you can start crafting: Enhanced Thick Balaur Scale.' },
+                    { t: 'p', text: 'You will need a large quantity of these later for crafting your actual gear.' },
                     { t: 'h', text: 'Recommended progression' },
                     {
                         t: 'code',
-                        text: 'Lv. 1 Spam Crafting\n        ↓\nProfessional Crafting\n        ↓\nProfessional Lv. 20+\n        ↓\nCraft Enhanced Thick Balaur Scales\n        ↓\nLv. 25–30 Crafting\n        ↓\nBegin Crafting Gear',
+                        text: 'Lv. 1 Spam Crafting to reach\n        ↓\nProfessional Lv. 20+, then start\n        ↓\nSpam Crafting Enhanced Thick Balaur Scales until you reach\n        ↓\nLv. 25–30 Professional Crafting, then start\n        ↓\nCrafting Your Gear',
                     },
                     {
                         t: 'note',
@@ -263,7 +273,7 @@ export const sections: Section[] = [
                             'Avoid optimizing gear that you will replace shortly afterward.',
                         ],
                     },
-                    { t: 'note', text: 'Ultimate Goal: Reach Sanctuary as soon as possible.' },
+                    { t: 'note', text: 'Ultimate Goal: Reach Transcendence/Sanctuary as soon as possible.' },
                 ],
             },
             {
@@ -272,10 +282,9 @@ export const sections: Section[] = [
                 title: 'Spend Energy on Vakron Sky Island',
                 summary: 'Open 3 boxes → Selector Chest → pick Chestplate.',
                 blocks: [
-                    { t: 'p', text: 'You can spend Odyle Energy on Vakron Sky Island exploration.' },
-                    { t: 'p', text: 'The objective is to open 3 boxes. These provide a Selector Chest.' },
-                    { t: 'h', text: 'Selector Chest Priority' },
-                    { t: 'p', text: 'Select: Chestplate.' },
+                    { t: 'p', text: 'The first place you should spend Odyle Energy is on Vakron Sky Island exploration.' },
+                    { t: 'p', text: 'The objective is to open 3 boxes which allows you to hit the pity that provide a Selector Chest.' },
+                    { t: 'h', text: 'Select: Chestplate' },
                     { t: 'p', text: 'This provides an important early item-level increase.' },
                 ],
             },
@@ -285,8 +294,15 @@ export const sections: Section[] = [
                 summary: 'Final crafting level requires a Golden Craft Item.',
                 blocks: [
                     { t: 'p', text: 'Crafting requires progressing through the tiers step-by-step.' },
-                    { t: 'p', text: 'You will eventually reach the final crafting level, which requires a Golden Craft Item.' },
+
+                    { t: 'p', text: 'Progress towards the items mentioned later on in the roadmap.' },
+                    {
+                        t: 'note',
+                        text: 'The materials required for crafting your gear should come from your Alt characters. This is where you can save a significant amount of Odyle Energy on your Main character that you should use later on in the progression.',
+                    },
+
                     { t: 'h', text: 'Golden Craft Item' },
+                    { t: 'p', text: 'You will eventually reach the final crafting step, which requires a Golden Craft Material (Item).' },
                     { t: 'p', text: 'This item may be obtainable from the market from other players.' },
                     {
                         t: 'p',
@@ -304,7 +320,7 @@ export const sections: Section[] = [
                     { t: 'p', text: 'You can:' },
                     {
                         t: 'ul',
-                        items: ['Save them for Supply Requests', 'List them on the Marketplace', 'Sell them to players who need them for Supply Requests'],
+                        items: ['Save them for Supply Requests', 'Sell them to players who need them for Supply Requests'],
                     },
                 ],
             },
@@ -349,7 +365,7 @@ export const sections: Section[] = [
                 title: 'Intermediate Manastones → ~Lv. 11',
                 summary: 'Embed crafted and other gear for extra item level.',
                 blocks: [
-                    { t: 'p', text: 'You can embed crafted gear and other gear pieces with Intermediate Manastones.' },
+                    { t: 'p', text: 'You can embed crafted gear and other gear pieces that you will keep for a while with Intermediate Manastones.' },
                     { t: 'p', text: 'Level these pieces up to approximately Lv. 11.' },
                     { t: 'p', text: 'This provides additional item level.' },
                 ],
@@ -404,7 +420,7 @@ export const sections: Section[] = [
                         t: 'note',
                         text: 'The reason is the same as the previous exploration: efficiently obtain additional item-level progression through the exploration rewards.',
                     },
-                    { t: 'p', text: 'Open 3 chests to obtain the relevant Selector Chest.' },
+                    { t: 'p', text: 'Open 3 chests to obtain the relevant Selector Chest through the pity system.' },
                     { t: 'h', text: 'IMPORTANT' },
                     { t: 'p', text: 'Do NOT open the Selector Chest immediately.' },
                     {
@@ -448,7 +464,7 @@ export const sections: Section[] = [
                 title: 'Upgrade Your Weapon — Dark Dragon → Ebony',
                 summary: 'Push the weapon roughly two crafting tiers, then other gear.',
                 blocks: [
-                    { t: 'p', text: 'After completing the Ferocious Horn Den progression, your focus shifts back toward crafting.' },
+                    { t: 'p', text: 'After/While completing the Ferocious Horn Den progression, your focus shifts back toward crafting.' },
                     { t: 'p', text: 'Progress your weapon through the crafting tiers by spending the materials you have accumulated.' },
                     { t: 'p', text: 'Upgrade it approximately two tiers, reaching tiers currently referred to as:' },
                     { t: 'ul', items: ['Dark Dragon', 'Ebony'] },
@@ -593,8 +609,7 @@ export const sections: Section[] = [
                     { t: 'ul', items: ['After reaching your final level, or', 'When your keys are approaching the maximum capacity.'] },
                     { t: 'p', text: 'This ensures the rewards are not wasted due to level restrictions.' },
                     { t: 'h', text: 'Shugo Festival Shop' },
-                    { t: 'p', text: 'Prioritize purchasing Daevanion Crystals. These provide a significant item-level increase.' },
-                    { t: 'note', text: 'Priority: Empty out the Daevanion Crystals first.' },
+                    { t: 'note', text: 'Prioritize purchasing Daevanion Crystals. These provide a significant item-level increase.' },
                 ],
             },
             {
@@ -675,10 +690,8 @@ export const sections: Section[] = [
                     { t: 'ul', items: ['Does not provide item level.', 'Does provide actual character power.'] },
                     { t: 'p', text: 'Therefore, you can still roll some lines if you want to improve your gameplay experience.' },
                     { t: 'h', text: 'When to Invest' },
-                    { t: 'p', text: 'Once you obtain your:' },
-                    { t: 'ul', items: ['Crafted Weapon', 'Crafted Earrings', 'Crafted Necklace'] },
-                    { t: 'p', text: 'begin looking for at least 2 good lines on these important pieces.' },
-                    { t: 'p', text: 'Avoid spending excessive resources perfecting temporary gear.' },
+                    { t: 'p', text: 'Once you obtain your crafted gear you can start looking for at least 2 good lines on these important pieces.' },
+                    { t: 'note', text: 'Avoid spending excessive resources perfecting temporary gear.' },
                 ],
             },
             {
@@ -925,7 +938,7 @@ SANCTUARY
 LUDRA`;
 
 export const goldenRules = [
-    { title: "Don't waste Odyle Energy.", text: 'Save it for content that actually advances your progression.' },
+    { title: "Don't waste Odyle Energy on Main.", text: 'Save it for content that actually advances your progression.' },
     { title: 'Item level comes first.', text: 'Early gear does not need to be perfect.' },
     {
         title: "Don't optimize temporary gear.",

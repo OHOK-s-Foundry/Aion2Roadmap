@@ -6,7 +6,7 @@ import { StepCard } from '@/components/StepCard';
 import { BackToTop } from '@/components/BackToTop';
 import { Reveal } from '@/components/Reveal';
 
-const TITLE = 'AION2 Progression Roadmap — Launch to Endgame Checklist';
+const TITLE = 'AION2 Vague Progression Roadmap — Launch to Endgame Checklist';
 const DESCRIPTION =
     'An interactive AION2 progression checklist: first days, crafting, item-level milestones, Conquest farming, Transcendence and side content — with saved progress.';
 
@@ -27,7 +27,6 @@ export const Route = createFileRoute('/')({
 const NAV = [
     ...sections.map((s) => ({ id: s.id, label: s.label })),
     { id: 'cheat-sheet', label: 'Cheat Sheet' },
-    { id: 'core-flow', label: 'Core Flow' },
     { id: 'golden-rules', label: 'Golden Rules' },
 ];
 
@@ -106,6 +105,15 @@ function Index() {
                         <h2>{roadmapMeta.subtitle}</h2>
                         <p className="hero-goal">
                             <strong>Goal:</strong> {roadmapMeta.goal}
+                        </p>
+                        <p className="hero-goal">
+                            <strong>Side note:</strong> {roadmapMeta.sidenote1}
+                        </p>
+                        <p className="hero-goal">
+                            <strong>Report:</strong> {roadmapMeta.sidenote2}
+                        </p>
+                        <p className="hero-goal">
+                            <strong>Disclaimer:</strong> {roadmapMeta.sidenote3}
                         </p>
 
                         <div className="hero-actions">
@@ -219,22 +227,6 @@ function Index() {
                                 </Reveal>
                             ))}
                         </div>
-                    </div>
-                </section>
-
-                <section className="section" id="core-flow">
-                    <div className="wrap">
-                        <div className="section-head">
-                            <div>
-                                <h2>8 — Core Progression Flow</h2>
-                                <p>The whole path, summarized.</p>
-                            </div>
-                        </div>
-                        <Reveal>
-                            <div className="flow-wrap">
-                                <pre className="code">{coreFlow}</pre>
-                            </div>
-                        </Reveal>
                     </div>
                 </section>
 
