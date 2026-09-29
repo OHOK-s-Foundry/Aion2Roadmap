@@ -40,12 +40,12 @@ const NAV = [
 
 function Index() {
   const { done, toggle, reset, completed, total, nextId, hydrated } = useProgress(allCheckableIds);
-  const [active, setActive] = useState(NAV[0].id);
+  const [active, setActive] = useState<string>(sections[0]?.id ?? "");
 
   useEffect(() => {
     const ids = NAV.map((n) => n.id);
     const onScroll = () => {
-      let current = ids[0];
+      let current = ids[0] ?? "";
       for (const id of ids) {
         const el = document.getElementById(id);
         if (el && el.getBoundingClientRect().top <= 200) current = id;
