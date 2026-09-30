@@ -15,7 +15,7 @@ export default defineConfig({
   vite: {
     build: {
       rollupOptions: {
-        external: ["@vercel/analytics"],
+        external: ["@vercel/analytics", "@vercel/speed-insights"],
       },
     },
   },
