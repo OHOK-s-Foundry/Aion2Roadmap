@@ -34,10 +34,8 @@ export const roadmapMeta = {
     source: 'https://www.youtube.com/watch?v=9r4nDbBxRxk',
     discord: 'validss',
     sidenote1:
-        'Please read all instructions carefully before proceeding. Depending on the pace of your progression, you may need to adjust the recommended order or timing of certain steps.',
-    sidenote2:
-        'If you encounter any incorrect, outdated, or missing information, please report it to me via Discord so I can review and update the guide accordingly.',
-    sidenote3: 'The source video and my Discord tag can be found in the footer of this page.',
+        'Please read all instructions carefully before proceeding. Depending on the pace of your progression, you may need to adjust the recommended order or timing of certain steps. If you encounter any incorrect, outdated, or missing information, please report it to me via Discord so I can review and update the guide accordingly.',
+    sidenote3: 'The source video and my Discord tag can be found in the Source & Disclaimer section of this page at the bottom.',
 };
 
 export const sections: Section[] = [

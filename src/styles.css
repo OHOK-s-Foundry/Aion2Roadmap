@@ -47,7 +47,14 @@ body {
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
+}
+
+body > main {
+    flex: 1 0 auto;
 }
 
 h1,
@@ -115,6 +122,18 @@ button {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.back-link {
+    font-size: 16px;
+    color: var(--fg-3);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 200ms var(--ease);
+}
+
+.back-link:hover {
+    color: var(--fg);
 }
 
 .progress-chip {
@@ -193,22 +212,25 @@ button {
 
 .hero {
     position: relative;
-    padding: 92px 0 72px;
+    padding: 48px 0 56px;
     border-bottom: 1px solid var(--line);
     overflow: hidden;
+    background: url('/landing_bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.hero::before {
+.hero::after {
     content: '';
     position: absolute;
-    inset: -40% 20% auto -10%;
-    height: 520px;
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.08), transparent 65%);
+    inset: 0;
+    background: linear-gradient(180deg, rgba(8, 9, 10, 0.78), rgba(8, 9, 10, 0.9));
     pointer-events: none;
 }
 
 .hero-inner {
     position: relative;
+    z-index: 1;
 }
 
 .eyebrow {
@@ -289,6 +311,38 @@ button {
 
 .btn-ghost {
     background: transparent;
+}
+
+.discord-chip {
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    padding: 16px 22px;
+    box-shadow: var(--shadow);
+    font-size: 14px;
+    color: var(--fg-2);
+}
+
+.discord-chip-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--fg-4);
+}
+
+.discord-chip code {
+    font-family: var(--font-mono);
+    background: var(--surface-3);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 13px;
+    color: var(--fg);
 }
 
 .stats {
@@ -379,6 +433,10 @@ button {
 
 .section {
     padding: 78px 0 10px;
+}
+
+.landing-sections {
+    padding: 48px 0 10px;
 }
 
 .section-head {
@@ -775,6 +833,28 @@ pre.code {
     font-size: 14px;
 }
 
+.guide-card {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.guide-card-desc {
+    margin: 14px 0 0;
+    color: var(--fg-3);
+    font-size: 14px;
+    flex: 1;
+}
+
+.guide-card-cta {
+    margin-top: 18px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fg-2);
+}
+
 .rules {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -828,11 +908,28 @@ pre.code {
 /* ---------------- Footer ---------------- */
 
 .footer {
-    margin-top: 90px;
+    flex: 0 0 auto;
+    max-height: 80px;
+    margin-top: 40px;
+    padding: 22px 0;
     border-top: 1px solid var(--line);
-    padding: 46px 0 70px;
+    background: var(--bg);
     color: var(--fg-3);
     font-size: 14px;
+    overflow: hidden;
+}
+
+.footer-basic {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-brand {
+    color: var(--fg-2);
+    font-weight: 500;
 }
 
 .footer h3 {
