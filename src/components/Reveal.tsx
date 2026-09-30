@@ -23,7 +23,11 @@ export function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: n
   }, []);
 
   return (
-    <div ref={ref} className={visible ? "reveal in" : "reveal"} style={{ transitionDelay: `${delay}ms` }}>
+    <div
+      ref={ref}
+      className={visible ? "reveal in" : "reveal"}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
       {children}
     </div>
   );
