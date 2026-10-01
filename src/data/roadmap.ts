@@ -537,32 +537,32 @@ export const sections: Section[] = [
                     },
                 ],
             },
-            // {
-            //   id: "s12",
-            //   step: 12,
-            //   title: "Upgrade Your Weapon — Dark Dragon → Ebony",
-            //   summary: "Push the weapon roughly two crafting tiers, then other gear.",
-            //   blocks: [
-            //     {
-            //       t: "p",
-            //       text: "After/While completing the Ferocious Horn Den progression, your focus shifts back toward crafting.",
-            //     },
-            //     {
-            //       t: "p",
-            //       text: "Progress your weapon through the crafting tiers by spending the materials you have accumulated.",
-            //     },
-            //     {
-            //       t: "p",
-            //       text: "Upgrade it approximately two tiers, reaching tiers currently referred to as:",
-            //     },
-            //     { t: "ul", items: ["Dark Dragon", "Ebony"] },
-            //     { t: "note", text: "The names may be different on Global." },
-            //     {
-            //       t: "p",
-            //       text: "After upgrading the weapon, begin doing the same with your other gear pieces.",
-            //     },
-            //   ],
-            // },
+            {
+                id: 's12',
+                step: 12,
+                title: 'Upgrade Your Weapon',
+                summary: 'Push the weapon roughly two crafting tiers, then other gear.',
+                blocks: [
+                    {
+                        t: 'p',
+                        text: 'After/While completing the Ferocious Horn Den progression, your focus shifts back toward crafting.',
+                    },
+                    {
+                        t: 'p',
+                        text: 'Progress your weapon through the crafting tiers by spending the materials you have accumulated.',
+                    },
+                    {
+                        t: 'p',
+                        text: 'Upgrade it approximately two tiers, reaching tiers currently referred to as:',
+                    },
+                    { t: 'ul', items: ['Dark Dragon', 'Ebony'] },
+                    { t: 'note', text: 'The names may be different for you.' },
+                    {
+                        t: 'p',
+                        text: 'After upgrading the weapon, begin doing the same with your other gear pieces.',
+                    },
+                ],
+            },
             {
                 id: 'e-transcendence',
                 title: 'Endgame Transition — Transcendence',
